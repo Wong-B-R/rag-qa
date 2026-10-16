@@ -7,14 +7,14 @@
 """
 import asyncio
 import json
-from typing import Any, AsyncIterator
+from typing import Any, AsyncIterator, Optional
 
 from backend import config
 
 
 async def stream_chat(
     messages: list[dict[str, Any]],
-    tools: list[dict[str, Any]] | None = None,
+    tools: Optional[list[dict[str, Any]]] = None,
 ) -> AsyncIterator[dict[str, Any]]:
     """流式调用大模型。
 

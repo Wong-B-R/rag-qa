@@ -4,7 +4,7 @@
 
 ## 一、快速开始
 
-需要 Python 3.10 及以上。
+需要 Python 3.9 及以上。
 
 ```bash
 git clone <仓库地址>
@@ -12,7 +12,9 @@ cd rag-qa
 pip install -r requirements.txt
 ```
 
-启动后端：Windows 双击 `start.bat`，macOS / Linux 执行 `./start.sh`。
+一键测试：Windows 双击 `run_e2e.bat`（自动启动后端并跑测试）。
+
+只启动后端：Windows 双击 `start.bat`，macOS / Linux 执行 `./start.sh`。
 
 首次启动会自动生成 `.env`，默认是**假数据模式**（`USE_MOCK_LLM=true`），不需要 API Key 也能跑通全流程。
 
